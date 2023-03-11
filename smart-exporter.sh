@@ -36,7 +36,7 @@ systemctl start node_exporter.service
 curl -o /usr/local/bin/smartmon.sh https://raw.githubusercontent.com/Bytebaked/node-exporter-installer/main/assets/smartmon.sh
 chmod +x /usr/local/bin/smartmon.sh
 
-mkdir /var/lib/node_exporter/textfile_collector
+mkdir -p /var/lib/node_exporter/textfile_collector
 touch /var/lib/node_exporter/textfile_collector/smart_metrics.prom
 
 /usr/local/bin/smartmon.sh > /var/lib/node_exporter/textfile_collector/smart_metrics.prom
