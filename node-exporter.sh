@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="${VERSION:-1.4.0}"
+version="${VERSION:-1.5.0}"
 arch="${ARCH:-linux-amd64}"
 bin_dir="${BIN_DIR:-/usr/local/bin}"
 
